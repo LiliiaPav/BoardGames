@@ -122,13 +122,13 @@ article p:nth-child(even){
 aside{
     background-color: #c33c33;
     color: white;
-    overflow: auto;
     max-width: 1200px;
     padding-right: 1rem;
+    overflow: auto;
 }
 
 aside img{
-    width: 47%;
+    width: 40%;
     float: left;
     margin-right: 2rem;
 }
@@ -155,6 +155,25 @@ footer{
 
 footer img{width: 10%;}
 
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 1rem;
+    height: 0;
+    overflow: hidden;
+    max-width: 800px;
+    margin: auto;
+}
+
+.video iframe{
+    padding: 1rem 0 1rem 1rem;
+    padding-top: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 
 /*---------HOME PAGE MEDIA-----------*/
@@ -189,11 +208,12 @@ footer img{width: 10%;}
         width: 80%;
         margin: auto;
         border-radius: 2rem;
+        max-width: 800px;
     }
     aside img{
         margin-right: 2rem;
-        max-width: 100%;
-        height: auto;
+        width: 20%;
+        border-top-left-radius: 2rem;
     }
 
     .big img {
@@ -203,6 +223,11 @@ footer img{width: 10%;}
         border-radius: 0;
         padding-bottom: 0;
         margin-bottom: 0;
+        
+    }
+
+    .video{
+        width: 80%;
     }
 
     footer img{width: 5%;}
