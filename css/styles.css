@@ -126,6 +126,9 @@ p {
     margin: 10px;
 }
 
+#local{
+    background-color: #c33c33;
+}
 section{
     display: grid;
     grid-template-areas:
@@ -135,15 +138,25 @@ section{
     grid-template-rows: 1fr auto auto;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
-    margin-bottom: 2rem;;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 2rem;
 }
+
+section a{ 
+    font-family: 'Bree Serif', serif;
+    font-weight: 600;
+    font-size: 3rem;
+   }
+
 section img{
     max-width: 100%;
     height: auto;
 }
 
 section figure{grid-area: fig;}
-section p {grid-area: p;}
+section p {grid-area: p;  text-align: center;}
 .first{grid-area: first;}
 .second{grid-area: second;}
 
