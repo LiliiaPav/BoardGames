@@ -128,9 +128,9 @@ aside{
 }
 
 aside img{
-    width: 40%;
+    width: 50%;
     float: left;
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 
 aside a{
@@ -166,7 +166,7 @@ footer img{width: 10%;}
 }
 
 .video iframe{
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem ;
     padding-top: 2rem;
     position: absolute;
     top: 0;
@@ -258,9 +258,10 @@ section{
     display: grid;
     grid-template-areas:
         "fig    fig"
+        "map    map"
         "p      p "
         "first  second";
-    grid-template-rows: 1fr auto auto;
+    grid-template-rows: auto 1fr auto auto;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
     margin: 2rem 0 2rem;
@@ -268,10 +269,17 @@ section{
     border-bottom: #c33c33 solid 2px;
     background-color: white;
     border-radius: 2rem;
-
+    box-shadow: 0 0 50px #ccc;
     
 }
 
+section iframe{
+    grid-area: map;
+    max-width: 100%;
+    padding-bottom: 2rem;
+    overflow: hidden;
+    max-height: 250px;
+}
 section a{ 
     font-family: 'Bree Serif', serif;
     font-weight: 600;
