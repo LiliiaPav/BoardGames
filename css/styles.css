@@ -20,11 +20,11 @@ header h1 {
 }
 
 .logo {
-    width: 15%;
+    width: 10%;
 }
 .menu {
-    width: 10%;
-    height: 10%;
+    font-size: 5rem;
+    color: white;
     align-self: center;
 }
 
