@@ -6,8 +6,8 @@
     <title>Your turn to play</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato:ital,wght@0,100;0,400;1,100;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato:ital,wght@0,100;0,400;1,100;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -17,14 +17,19 @@
     </header>
 
     <nav>
-         <img class='logo' src="img/logoMeepleWh.png" alt="logo meeple">
+        <img class='logo' src="img/logoMeepleWh.png" alt="logo meeple">
         <img class='menu' src="img/menu_white.png" alt="menu">
 
     </nav>
 
     <main>
         <article class="big">
-            <img src="img/back_sm.jpg" alt="board games">
+            <picture>
+                <source media="(max-width: 799px)" srcset="img/back_sm.jpg" >
+                <source media="(min-width: 800px)" srcset="img/back_big.jpg">
+                <img src="img/back_sm.jpg" alt="board games" />
+              </picture>
+
             <h2>Our Collection</h2>
             <p>The world of board games is huge. In our collection, we have only some options but we are always glad to throw a double six.</p>
             <p>In our list, we have games of different genres, different ages, and difficulties. But many modern games are friendly to families and newcomers to the hobby. Learn more about <a href="pages/library.html"> our library.</a>
@@ -59,6 +64,8 @@
 
         <h2>Local happy place</h2>
         <p>You can go to the board game cafe and explore different kinds of games. Local stores or board game cafes are a great way to try out a game before buying it, great for those that do not have a lot of space to store many games, and also a great place to find people to play with. <a href="pages/local.html"> Learn more...</a></p> 
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/J_JeWJZbvL0?si=hFSIVY_qtC_Qqn27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </aside>
 
     <footer><p>&copy; Copyright 2023</p>
