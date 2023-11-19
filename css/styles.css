@@ -32,7 +32,7 @@ header h2 {
     width: 100%;
     font-family: 'Lato', sans-serif;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 400;
     font-style: italic;
     padding-top: 1rem;
     text-align: right;
@@ -142,6 +142,7 @@ section{
     padding: 2rem;
     background-color: white;
     border-radius: 2rem;
+    background: linear-gradient(white, #c33c33);
 }
 
 section a{ 
@@ -154,6 +155,14 @@ section img{
     max-width: 100%;
     height: auto;
 }
+
+section a:link{color:#c33c33}
+section a:visited{color: black;}
+section a:hover{color: #5c5c5c;}
+section a:active{color: #c33c33;}
+
+
+
 
 section figure{grid-area: fig;}
 section p {grid-area: p;  text-align: center;}
