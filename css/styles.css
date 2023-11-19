@@ -70,7 +70,6 @@ main{
 .small{
     background-color: white;
     box-shadow: 1px 1px 8px #5c5c5c;
-    padding-bottom: 1rem;
     margin-top: 4rem;
     border-radius: 2rem;
 }
@@ -104,8 +103,7 @@ h2{
 aside p, article p {
     font-size: 1.6em;
     line-height: 1.4;
-    margin-bottom: 1.5em;
-    margin: 10px;
+    padding: 2rem;
 }
 
 aside{
@@ -113,11 +111,11 @@ aside{
     color: white;
     overflow: auto;
     max-width: 1200px;
-    padding-right: 2rem;
+    padding-right: 1rem;
 }
 
 aside img{
-    width: 40%;
+    width: 47%;
     float: left;
     margin-right: 2rem;
 }
