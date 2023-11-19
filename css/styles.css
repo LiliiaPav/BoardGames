@@ -197,6 +197,14 @@ footer img{width: 10%;}
 	text-align: right;
 }
 
+h3{
+    font-size: 3rem;
+    font-weight: 100;
+    font-family: 'Lato', sans-serif;
+    grid-area: article;
+    text-align: center;
+}
+
 section{
     display: grid;
     grid-template-areas:
@@ -240,3 +248,53 @@ section figure{grid-area: fig;}
 .second{grid-area: second;}
 
 /*---------LIBRARY PAGE-----------*/
+.game{
+    width: 80%;
+    margin: 4rem auto 0;
+   border-bottom: #c33c33 2px dotted;
+   display: grid;
+   grid-template-areas:
+        "name    name"
+        "coverImg   players"
+        "coverImg   time"
+        "coverImg   age"
+        "about   about"
+        "img01  img02"
+        "meeple    meeple"  ;
+    grid-template-rows: 1fr 0.5fr 0.5fr 0,5fr 1fr 1fr 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.name{
+    grid-area: name;
+    color:#c33c33;
+    font-weight: 400;
+    margin-bottom: 2rem;}
+.players{grid-area: players}
+.time{grid-area: time}
+.age{grid-area: age}
+.about{
+    grid-area: about;
+}
+.img01{grid-area: img01}
+.img02{grid-area: img02}
+.coverImg{grid-area: coverImg;}
+.meeple:nth-child(even){
+    width: 20%;
+    transform: rotateY(180deg);
+}
+
+.meeple{
+    width: 10%;
+    grid-area: meeple;
+}
+
+.game img{
+    max-width: 100%;
+    height: auto;
+}
+.game>p {
+    margin: 0;
+    padding: 0;
+}
