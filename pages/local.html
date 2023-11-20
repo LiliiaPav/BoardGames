@@ -18,13 +18,18 @@
 
     <nav>
         <img class='logo' src="../img/logoMeepleWh.png" alt="logo meeple">
-        <i class="fa-solid fa-bars menu"></i>
-        <ul>
+        <input type="checkbox" class="navToggler" id="navToggler">
+        <label for="navToggler" class="navTogglerMenu" name="navToggler">
+            <i class="fa-solid fa-bars menu openBtn"></i>
+            <i class="fa-solid fa-xmark menu closeBtn"></i>
+        </label>
+        
+        
+        <ul class="navigation">
             <li><a href="../index.html">Home</a></li>
             <li><a href="library.html">Library</a></li>
             <li><a class="current" href="local.html">Community</a></li>
         </ul>
-        
     </nav>
 
     <main>

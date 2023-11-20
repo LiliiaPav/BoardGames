@@ -10,17 +10,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato:ital,wght@0,100;0,300;0,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="code/script.js defer"></script>
 </head>
 <body>
     <header>
         <h1>Join the game</h1>
-        
     </header>
-
+    
     <nav>
         <img class='logo' src="img/logoMeepleWh.png" alt="logo meeple">
-        <i class="fa-solid fa-bars menu"></i>
-       <ul>
+        <input type="checkbox" class="navToggler" id="navToggler">
+        <label for="navToggler" class="navTogglerMenu" name="navToggler">
+            <i class="fa-solid fa-bars menu openBtn"></i>
+            <i class="fa-solid fa-xmark menu closeBtn"></i>
+        </label>
+        
+        
+        <ul class="navigation">
             <li><a class="current" href="index.html">Home</a></li>
             <li><a href="pages/library.html">Library</a></li>
             <li><a href="pages/local.html">Community</a></li>
