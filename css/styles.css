@@ -170,14 +170,18 @@ aside{
     color: white;
     max-width: 1200px;
     padding-right: 1rem;
-    overflow: auto;
+    display: grid;
+    grid-template-areas:
+        "x y"
+        "x  z";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr auto;
 }
 
-aside img{
-    width: 40%;
-    float: left;
-    margin-right: 1rem;
-}
+aside picture{ grid-area: x;}
+aside h2{grid-area: y;}
+aside p{grid-area: z;}
+
 
 aside a{
     color: white;
@@ -284,8 +288,6 @@ footer img{width: 10%;}
         max-width: 800px;
     }
     aside img{
-        margin-right: 2rem;
-        width: 30%;
         border-top-left-radius: 2rem;
     }
 
